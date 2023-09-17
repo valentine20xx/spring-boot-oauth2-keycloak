@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: tasklist
+            client-secret: yvPyKLH1x19r28mm2vc7IWBehq0LjDzq
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:18080/auth/realms/master
+            user-name-attribute: preferred_username
